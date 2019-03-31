@@ -274,7 +274,7 @@ public class Livre {
 		pageGaucheDroite.setWidthPercentage(100);
 
 		if (personne.getInformation(Fichier.KEY).size() > 0 && modele != null) {
-			File f = new File(personne.getInformation(Fichier.KEY).get(0) + ".jpg");
+			File f = new File(image + personne.getInformation(Fichier.KEY).get(0) + ".jpg");
 			if (f.isFile()) {
 				Image img = Image.getInstance(image + personne.getInformation(Fichier.KEY).get(0) + ".jpg");
 				img.scaleToFit(100, 150);
